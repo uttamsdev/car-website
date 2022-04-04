@@ -2,10 +2,12 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
+    overflow: hidden;
 }
 .chart{
     display: flex;
     justify-content: center;
+    overflow: hidden;
     /* gap: 500px; */
 }
 .charts-container h2{
@@ -14,4 +16,14 @@
 }
 .dashboard{
     margin: 100px 0px;
+}
+
+@media (max-width:688px) {
+    .charts-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .line-chart{
+        width: 350px;
+        overflow: hidden;
+    }
 }

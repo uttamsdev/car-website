@@ -3,11 +3,10 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom";
 function CustomLink({ children, to, ...props }) {
   let resolved = useResolvedPath(to);
   let match = useMatch({ path: resolved.pathname, end: true });
-
   return (
     <div>
       <Link
-        style={{ color: match ? "crimson" : "gray", textDecoration: match ? "underline" : "none", textDecorationColor: match ? "red !important" : "lightgray !important" }}
+        style={{ color: match ? "red" : "white", textDecoration: match ? "underline" : "none" }}
         to={to}
         {...props}
       >

@@ -20,7 +20,9 @@ const SingleReview = (props) => {
         <img src={img} alt="" /> <br />
         <h4>{name}</h4>
         <div className="rating-align">
-          <span>Ratings: </span>
+          <span>
+            <b>Ratings: </b>
+          </span>
           {rating.map((rating) => (
             <AiFillStar className="icons"></AiFillStar>
           ))}

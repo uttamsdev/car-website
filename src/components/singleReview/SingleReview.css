@@ -22,3 +22,8 @@
 .review p{
     text-align: justify;
 }
+@media (max-width:688px) {
+  .review{
+    width: 300px;
+  }
+}

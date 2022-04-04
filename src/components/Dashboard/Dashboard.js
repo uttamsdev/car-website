@@ -28,7 +28,7 @@ const Dashboard = () => {
     <div className="dashboard">
       <div className="chart">
         <div className="charts-container">
-          <div>
+          <div className="line-chart">
             <LineChart width={600} height={400} data={data}>
               <XAxis dataKey="month" />
               <YAxis dataKey="sell"></YAxis>

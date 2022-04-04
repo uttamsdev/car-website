@@ -18,12 +18,15 @@ const Home = () => {
       <div className="home">
         <div className="home-content">
           <h1>
-            Welcome To Our,
+            <span className="title-first">Welcome To Our,</span>
             <br />
             <span className="title">Car Shop BD </span>
           </h1>
           <p className="home-details">
-            Car Shop BD is the best online car selling company. Here you will get all kinds of cars. You can also take car rent from here. Load service is available for buy cars. Please buy your favourite car from here. Thank you so much.
+            Car Shop BD is the best online car selling company. Here you will
+            get all kinds of cars. You can also take car rent from here. Load
+            service is available for buy cars. Please buy your favourite car
+            from here. Thank you so much.
           </p>
           <button>
             Live Demo{" "}
