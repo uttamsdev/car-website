@@ -6,9 +6,9 @@ import './SingleReview.css'
 const SingleReview = (props) => {
     const {name, img, comment, ratings} = props.review;
     console.log(props);
-    const array = [];
+    const rating = [];
     for(let i = 1; i <= ratings; i++){
-        array.push(5);
+        rating.push('');
     }
     return (
       <div className="review">
@@ -16,7 +16,7 @@ const SingleReview = (props) => {
         <img src={img} alt="" /> <br />
         <h4>{name}</h4>
         <span>Ratings: </span>
-        {array.map((array) => (
+        {rating.map((rating) => (
           <FontAwesomeIcon className="icons" icon={faStar}></FontAwesomeIcon>
         ))}
       </div>
