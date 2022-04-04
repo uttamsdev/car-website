@@ -1,9 +1,14 @@
 import React from "react";  
+import useReviews from "../../CustomHooks/useReviews";
+import SingleReview from "../singleReview/SingleReview";
 import './Home.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Home = () => {
+  const [reviews, setReviews] = useReviews(3);
     return (
-      <div>
+      <div className="home-container">
         <div className="home">
           <div className="home-content">
             <h1>
@@ -16,14 +21,31 @@ const Home = () => {
               soluta autem blanditiis ducimus, similique dignissimos
               accusantium. Qui, blanditiis possimus. Aliquid, totam?
             </p>
-            <button>Live Demo</button>
+            <button>
+              Live Demo{" "}
+              <FontAwesomeIcon className="fa-icon" icon={faArrowCircleRight}></FontAwesomeIcon>
+            </button>
           </div>
           <div>
             <img src="car1.png" alt="" />
           </div>
         </div>
         <div className="customer-review">
-            <h1 className="customer-review-title">Customer Reviews(3)</h1>
+          <h1 className="customer-review-title">Customer Reviews(3)</h1>
+          <div className="review-container">
+            <div className="reviews">
+              {reviews.map((review) => (
+                <SingleReview review={review} key={review.id}></SingleReview>
+              ))}
+            </div>
+          </div>
+          <button className="all-reviews-btn">
+            See All Reviews{" "}
+            <FontAwesomeIcon
+              className="fa-icon"
+              icon={faArrowCircleRight}
+            ></FontAwesomeIcon>{" "}
+          </button>
         </div>
       </div>
     );

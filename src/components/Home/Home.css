@@ -46,3 +46,38 @@
     margin-top: 100px;
     text-align: center;
 }
+.review-container{
+    display: flex;
+    justify-content: center;
+}
+.reviews{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    /* display: flex; */
+}
+.all-reviews-btn{
+    margin-bottom: 200px;
+    margin-top: 50px;
+    display: block;
+    margin: 100px auto;
+    border: none;
+    padding: 20px 50px;
+    font-size: 20px;
+    font-weight: 550;
+    color: white;
+    background-color: crimson;
+    cursor: pointer;
+    border-radius: 5px;
+  
+
+}
+.fa-icon{
+    font-size: 25px;
+}
+.home-container button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
