@@ -118,4 +118,7 @@
     .reviews{
         grid-template-columns: repeat(1, 1fr);
     }
+    .home-details{
+        font-size: 19px;
+    }
 }
