@@ -1,0 +1,17 @@
+.charts-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 100px;
+}
+.chart{
+    display: flex;
+    justify-content: center;
+    /* gap: 500px; */
+}
+.charts-container h2{
+    color: rgba(12, 12, 240, 0.911);
+    text-align: center;
+}
+.dashboard{
+    margin: 100px 0px;
+}
