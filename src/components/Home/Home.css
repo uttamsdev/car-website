@@ -25,8 +25,9 @@
 
 .home-details{
     color: rgb(34, 32, 32);
-    font-size: 25px;
+    font-size: 23px;
     text-align: justify;
+    margin-bottom: 30px;
 }
 .home button{
     border: none;
@@ -39,7 +40,7 @@
     border-radius: 5px;
 }
 .home button:hover{
-    background-color: lightcoral;
+    background-color: red;
 }
 .customer-review-title{
     margin-top: 120px;
@@ -71,6 +72,9 @@
     border-radius: 5px;
   
 
+}
+.all-reviews-btn:hover{
+    background-color: red;
 }
 .fa-icon{
     font-size: 25px;

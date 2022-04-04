@@ -1,0 +1,18 @@
+.footer{
+    text-align: center;
+    height: 200px;
+    background-color: black;
+    color: white;
+    padding: 30px 0px;
+    margin-top: 50px;
+}
+.footer h1{
+    font-size: 50px;
+    margin: 20px;
+}
+
+.social-icons a{
+    color: white;
+    margin-right: 20px;
+    font-size: 28px;
+}

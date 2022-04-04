@@ -1,12 +1,10 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import React from "react";
 import './SingleReview.css'
 
 const SingleReview = (props) => {
     const {name, img, comment, ratings} = props.review;
-    console.log(props);
+    
     const rating = [];
     for(let i = 1; i <= ratings; i++){
         rating.push('');

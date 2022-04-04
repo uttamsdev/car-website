@@ -1,0 +1,16 @@
+.about-us{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.about-us img{
+    width: 50%;
+    /* margin-top: -100px; */
+}
+.about-us p{
+    width: 80%;
+    margin-top: -150px;
+    font-size: 23px;
+
+}
