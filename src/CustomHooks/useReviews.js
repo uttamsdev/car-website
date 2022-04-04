@@ -5,7 +5,14 @@ const useReviews = (count) => {
   useEffect(() => {
     fetch("reviews.json")
       .then((res) => res.json())
-      .then((data) => setReviews(data.slice(0,count)));
+      .then((data) => {
+        if(count){
+          setReviews(data.slice(0, 3));
+        }
+        else{
+          setReviews(data);
+        }
+      });
   }, [count]);
   return [reviews, setReviews];
 };

@@ -7,7 +7,7 @@ import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
-  const [reviews, setReviews] = useReviews(3);
+  const [reviews, setReviews] = useReviews(true);
   const navigate = useNavigate();
 
   const seeAllReviews = () => {
