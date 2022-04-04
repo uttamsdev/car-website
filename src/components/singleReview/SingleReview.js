@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar, faStarHalf } from "@fortawesome/free-solid-svg-icons";
+import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import React from "react";
 import './SingleReview.css'
 
@@ -10,15 +11,25 @@ const SingleReview = (props) => {
     for(let i = 1; i <= ratings; i++){
         rating.push('');
     }
+    let remaining = 5 - rating.length;
+    const rest = [];
+    for(let i = 1; i <= remaining; i++){
+        rest.push('');
+    }
     return (
       <div className="review">
         <p>{comment}</p>
         <img src={img} alt="" /> <br />
         <h4>{name}</h4>
-        <span>Ratings: </span>
-        {rating.map((rating) => (
-          <FontAwesomeIcon className="icons" icon={faStar}></FontAwesomeIcon>
-        ))}
+        <div className="rating-align">
+          <span>Ratings: </span>
+          {rating.map((rating) => (
+            <AiFillStar className="icons"></AiFillStar>
+          ))}
+          {rest.map((rest) => (
+            <AiOutlineStar className="icons"></AiOutlineStar>
+          ))}
+        </div>
       </div>
     );
 }

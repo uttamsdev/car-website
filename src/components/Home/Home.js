@@ -4,9 +4,15 @@ import SingleReview from "../singleReview/SingleReview";
 import './Home.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowCircleRight } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [reviews, setReviews] = useReviews(3);
+  const navigate = useNavigate();
+
+  const seeAllReviews = () => {
+    navigate('/reviews')
+  }
     return (
       <div className="home-container">
         <div className="home">
@@ -39,7 +45,7 @@ const Home = () => {
               ))}
             </div>
           </div>
-          <button className="all-reviews-btn">
+          <button onClick={seeAllReviews} className="all-reviews-btn">
             See All Reviews{" "}
             <FontAwesomeIcon
               className="fa-icon"
