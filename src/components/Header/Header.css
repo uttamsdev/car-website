@@ -3,14 +3,15 @@ nav a {
   color: black;
   text-transform: uppercase;
   display: inline;
-  margin-right: 25px;
+  margin-right: 30px;
   text-decoration: underline !important;
   text-underline-offset: 3px;
   text-underline-position: under;
   /* text-decoration-color: blue !important; */
   text-decoration-thickness: 15% !important;
   border-bottom-left-radius: 50px 20px !important;
-  font-size: 25px;
+  font-size: 30px;
+  font-weight: 500;
 }
 nav {
   display: flex;

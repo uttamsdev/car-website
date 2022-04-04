@@ -17,17 +17,16 @@
     text-transform: uppercase;
 }
 .title{
-    color: blue;
+    color: crimson;
 }
 .home-content{
-    width: 800px;
+    width: 700px;
 }
-.home img{
-    /* width: 80%; */
-}
-.home p{
-    color: gray;
+
+.home-details{
+    color: rgb(34, 32, 32);
     font-size: 25px;
+    text-align: justify;
 }
 .home button{
     border: none;
@@ -43,7 +42,8 @@
     background-color: lightcoral;
 }
 .customer-review-title{
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-bottom: 65px;
     text-align: center;
 }
 .review-container{
