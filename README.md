@@ -1,6 +1,6 @@
 # CAR Website
 
-## [Netlify Live Link](https://car-shop-bd.netlify.app/)
+## [Live Link](https://car-shop-bd.netlify.app/)
 
 Netlify Live link: https://car-shop-bd.netlify.app/
 
